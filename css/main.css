@@ -1,0 +1,344 @@
+@font-face {
+    font-family: "sport";
+    src: url("../fuentes/sport.ttf");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "sport";
+}
+
+.body{
+    background-color:#F5F5DC;
+
+}
+.pcentralnosotros{
+    text-align: center;
+    padding: 2rem;
+}
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%); 
+}
+
+
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #8B4513; 
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: #F5F5DC; 
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    flex-wrap: wrap ;
+}
+
+.titulos {
+    font-size: 24px;
+    color: #8B4513; 
+    margin: 0;
+}
+
+
+.nav {
+    display: flex;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    margin-left: 20px;
+}
+
+.links {
+    text-decoration: none;
+    color: #2F4F4F; 
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu-item {
+        width: 100%;
+        text-align: left;
+        margin: 5px 0;
+    }
+
+    .links {
+        width: 100%;
+        padding: 10px;
+        text-decoration: none;
+    }
+}
+
+.image-container {
+    display: flex;
+}
+
+.full-width-image {
+    width: 50%; 
+    height: auto;
+}
+.img-container {
+    display: flex;
+    width: 100%;
+}
+
+.cuadrosimg {   
+    width: 50%;
+    height: 700px; 
+}
+.ol{
+    text-align: center;
+}
+.li
+{
+    margin-bottom: 10px;
+}
+.containercontacto {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contenedorinicio{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-areas:   
+    
+                            "p1     foto1 foto2"
+                            "p1     foto3 foto4"
+                    
+                    ;
+}
+@media (max-width: 768px) {
+    .contenedorinicio {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "p1"
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4";
+    }
+}
+.p1{
+    grid-area: p1;
+    background-color: #ceb687;
+    padding: 1rem 1rem;
+    background-image: url("../img/fotomesa.jpg");
+    filter: brightness(0.7) grayscale(50%) sepia(30%);
+    display: flex;
+    flex-direction: column;
+
+}
+.foto1{
+    grid-area: foto1;
+    background-color: #eed5a5;
+    background-image: url("../img/foto1.png");
+    filter: brightness(0.7) grayscale(50%) sepia(30%);
+    text-decoration: none;
+    color: #2F4F4F; 
+    font-weight: bold;
+    transition: color 0.3s;
+
+  }
+  
+  .foto2{
+    grid-area: foto2;
+    background-color: #8f7a4e;
+    background-image: url("../img/espejobanco.jpg");
+    filter: brightness(0.7) grayscale(50%) sepia(30%);
+  }
+
+  .foto3{
+    grid-area: foto3;
+    background-color: #8f7a4e;
+    background-image: url("../img/banquito.jpg");
+    filter: brightness(0.7) grayscale(50%) sepia(30%);
+  }
+
+  .foto4{
+    grid-area: foto4;
+    background-color: #eed5a5;
+    background-image: url("../img/foto2.png");
+    filter: brightness(0.7) grayscale(50%) sepia(30%);
+  }
+  .hijo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .contenedornos {
+    display: grid;
+    height: auto;
+    padding: 1rem 2rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "fotoc p2";
+}
+
+@media (max-width: 768px) {
+    .contenedornos {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "fotoc"
+            "p2";
+    }
+}
+
+ .hijo2{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .fotocarpintera{
+    grid-area: fotoc;
+    width:700px;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.7) grayscale(50%) sepia(30%);
+    
+ }
+ .p2{   
+    grid-area: p2;
+    border-color: #2F4F4F;
+    border-width: medium;
+    border-style: solid;
+    margin:50px;
+    padding: 1rem;
+
+ }
+
+img {
+    width: 100%;
+    height: auto;
+    }
+
+    .linksinicio {
+        text-decoration: none;
+        color: whitesmoke; 
+        font-weight: bold;
+        transition: color 0.3s;
+    }   
+.titulo1 {
+    display: flex;
+    color: white;
+    background-color: #2F4F4F;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fotosp{
+    filter: brightness(0.7) grayscale(10%) sepia(30%);
+  }
+  .titulop {
+    display: flex;
+    color: white;
+    background-color: #2F4F4F;
+    justify-content: center;
+    padding: 3rem;
+    margin-right: 10px;
+  }
