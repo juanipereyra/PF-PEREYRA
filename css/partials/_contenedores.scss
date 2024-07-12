@@ -1,0 +1,151 @@
+.contenedorinicio {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "p1 foto1 foto2"
+        "p1 foto3 foto4";
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, 1fr);
+        grid-template-areas: 
+            "p1"
+            "foto1"
+            "foto2"
+            "foto3"
+            "foto4";
+    }
+
+    .p1 {
+        grid-area: p1;
+        background-color: #ceb687;
+        padding: 1rem 1rem;
+        background-image: url("../img/fotomesa.jpg");
+        filter: brightness(0.7) grayscale(50%) sepia(30%);
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foto1 {
+        grid-area: foto1;
+        background-color: #eed5a5;
+        background-image: url("../img/foto1.png");
+        filter: brightness(0.7) grayscale(50%) sepia(30%);
+        text-decoration: none;
+        color: #2F4F4F; 
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+  
+    .foto2 {
+        grid-area: foto2;
+        background-color: #8f7a4e;
+        background-image: url("../img/espejobanco.jpg");
+        filter: brightness(0.7) grayscale(50%) sepia(30%);
+    }
+
+    .foto3 {
+        grid-area: foto3;
+        background-color: #8f7a4e;
+        background-image: url("../img/banquito.jpg");
+        filter: brightness(0.7) grayscale(50%) sepia(30%);
+    }
+
+    .foto4 {
+        grid-area: foto4;
+        background-color: #eed5a5;
+        background-image: url("../img/foto2.png");
+        filter: brightness(0.7) grayscale(50%) sepia(30%);
+    }
+
+    .hijo1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+.links {
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+}
+.contenedornos {
+    display: grid;
+    height: auto;
+    padding: 1rem 2rem;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "fotoc p2";
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+            "fotoc"
+            "p2";
+    }
+
+    .hijo2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fotocarpintera {
+        grid-area: fotoc;
+        width: 700px;
+        justify-content: center;
+        align-items: center;
+        filter: brightness(0.7) grayscale(50%) sepia(30%);
+    }
+
+    .p2 {
+        grid-area: p2;
+        border-color: #2F4F4F;
+        border-width: medium;
+        border-style: solid;
+        margin: 50px;
+        padding: 1rem;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    .linksinicio {
+        text-decoration: none;
+        color: whitesmoke; 
+        font-weight: bold;
+        transition: color 0.3s;
+    }
+
+    .titulo1 {
+        display: flex;
+        color: white;
+        background-color: #2F4F4F;
+        padding: 2rem;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.containercontacto {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+
+    }
+   
+  
+  
+  
+  
+  
+  

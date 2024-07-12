@@ -1,0 +1,101 @@
+.pcentralnosotros {
+    text-align: center;
+    padding: 2rem;
+  }
+  .social-media img {
+    width: 30px;
+    height: 30px;
+    filter: grayscale(100%);
+  }
+  
+  .contact-info {
+    margin-top: 15px;
+  }
+  
+  .contact-info p {
+    margin: 5px 0;
+  }
+  
+  .contact-info a {
+    color: #8B4513;
+    text-decoration: none;
+  }
+  
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
+  .links {
+    text-decoration: none;
+    color: #2F4F4F;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  ol {
+    text-align: center;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  .containercontacto {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .fotosp {
+    filter: brightness(0.7) grayscale(10%) sepia(30%);
+  }
+  
+  .titulop {
+    display: flex;
+    color: white;
+    background-color: #2F4F4F;
+    justify-content: center;
+    padding: 3rem;
+    margin-right: 10px;
+  }
+  .titulo1 {
+    display: flex;
+    color: white;
+    background-color: #2F4F4F;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .fotosp{
+    filter: brightness(0.7) grayscale(10%) sepia(30%);
+  }
+  .titulop {
+    display: flex;
+    color: white;
+    background-color: #2F4F4F;
+    justify-content: center;
+    padding: 3rem;
+    margin-right: 10px;
+  }
