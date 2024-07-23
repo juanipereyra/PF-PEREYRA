@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>paraeserincon - Contacto</title>
 </head>
 <body class="body">
     <header>    
@@ -21,21 +21,34 @@
             </nav>
         </div>
     </header>
-    <div class="containercontacto">
-        <h2>Contacto</h2>
-        <form>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Correo Electrónico:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Mensaje:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <input type="submit" value="Enviar">
-        </form>
-    </div>
+    <main class="flex-conteiner">
+        <div class="containercontacto flex-item">
+            <h2 class="titulo1">CONTACTATE CON NOSOTROS!</h2>
+            <form>
+                <label class="titulo1" for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label class="titulo1" for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label class="titulo1" for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+        <div class="contact-info flex-item">
+            <h2>VENÍ A VISITARNOS</h2>
+            <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            <p>Teléfono: +123 456 7890</p>
+            <p>Email: contacto@ejemplo.com</p>
+            <p>Horario de Atención: Lunes a Viernes, 9:00 AM - 6:00 PM</p>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.947272653694!2d-122.08424968483152!3d37.42206597982502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb5ba69e2b1fd%3A0x76f4c8ae06e1df74!2sGoogleplex!5e0!3m2!1sen!2sus!4v1592242258455!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+    </main>
+    
 
         <footer>
         <div class="footer-container">
